@@ -1,12 +1,12 @@
-import { useDispatch } from "react-redux";
+import { useDispatch } from 'react-redux';
 import {
   asyncToggleDownThreadDetail,
   asyncToggleUpThreadDetail,
-} from "../../states/threadDetail/action";
-import { Box, Typography } from "@mui/material";
-import ActionButton from "../ActionButton";
-import PropTypes from "prop-types";
-import { detailProp } from "../../utils/propHelper";
+} from '../../states/threadDetail/action';
+import { Box, Typography } from '@mui/material';
+import ActionButton from '../ActionButton';
+import PropTypes from 'prop-types';
+import { detailProp } from '../../utils/propHelper';
 
 function DetailThreadFooter({ detail }) {
   const { upVotesBy, downVotesBy } = detail;
@@ -23,14 +23,14 @@ function DetailThreadFooter({ detail }) {
   };
 
   return (
-    <Box sx={{ m: 2, display: "flex", alignItems: "center" }}>
+    <Box sx={{ m: 2, display: 'flex', alignItems: 'center' }}>
       <ActionButton
-        type="up"
+        type='up'
         count={upVotesBy.length}
         onButtonClicked={onUpVoteThread}
       />
       <ActionButton
-        type="down"
+        type='down'
         count={downVotesBy.length}
         onButtonClicked={onDownVoteThread}
       />

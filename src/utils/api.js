@@ -162,15 +162,17 @@ const api = (() => {
   }
 
   // Comments
-  async function createComment({ id, content }) {
+  async function createComment(threadId, content) {
     const response = await _fetchWithAuth(
-      `${BASE_URL}/threads/${id}/comments`,
+      `${BASE_URL}/threads/${threadId}/comments`,
       {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ content }),
+        body: JSON.stringify({
+          content,
+        }),
       }
     );
 

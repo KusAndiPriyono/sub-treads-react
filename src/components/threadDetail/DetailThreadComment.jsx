@@ -1,13 +1,21 @@
-import { Box, Typography } from "@mui/material";
-import InputComment from "../comment/InputComment";
-import { detailProp } from "../../utils/propHelper";
-import PropTypes from "prop-types";
+import { Box, Typography } from '@mui/material';
+import InputComment from '../comment/InputComment';
+import { detailProp } from '../../utils/propHelper';
+import PropTypes from 'prop-types';
+import ListComment from '../comment/ListComment';
 
 function DetailThreadComment({ detail }) {
+  const { comments } = detail;
+
   return (
     <Box sx={{ m: 2 }}>
       <Typography sx={{ mt: 1 }}>Tambahkan Komentar</Typography>
       <InputComment threadId={detail.id} />
+
+      <Box>
+        <Typography>{`Komentar (${comments.length})`}</Typography>
+        <ListComment comments={comments} />
+      </Box>
     </Box>
   );
 }

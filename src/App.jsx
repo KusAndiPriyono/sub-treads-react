@@ -9,6 +9,7 @@ import { asyncUnsetAuthUser } from './states/authUser/action';
 import Navigation from './components/Navigation';
 import HomePage from './pages/HomePage';
 import DetailPage from './pages/DetailPage';
+import CreateThreadPage from './pages/CreateThreadPage';
 
 function App() {
   const { authUser = null, isPreload = false } = useSelector(
@@ -50,6 +51,7 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<HomePage />} />
+          <Route path='/create' element={<CreateThreadPage />} />
           <Route path='/thread/:id' element={<DetailPage />} />
         </Routes>
       </main>

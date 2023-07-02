@@ -1,7 +1,7 @@
-import { Box, CardContent, Typography } from "@mui/material";
-import { detailProp } from "../../utils/propHelper";
-import { postedAt } from "../../utils/postedAt";
-import PropTypes from "prop-types";
+import { Box, CardContent, Typography } from '@mui/material';
+import { detailProp } from '../../utils/propHelper';
+import { postedAt } from '../../utils/postedAt';
+import PropTypes from 'prop-types';
 
 function DetailThreadHeader({ detail }) {
   const { name, avatar } = detail.owner;
@@ -9,7 +9,7 @@ function DetailThreadHeader({ detail }) {
 
   return (
     <Box>
-      <Box sx={{ display: "flex", alignItems: "center", m: 1 }}>
+      <Box sx={{ display: 'flex', alignItems: 'center', m: 1 }}>
         <img
           src={avatar}
           alt={name}
@@ -18,13 +18,13 @@ function DetailThreadHeader({ detail }) {
           height={40}
         />
         <span style={{ marginLeft: 10 }}>
-          {name} {""} :
+          {name} {''} :
         </span>
       </Box>
       <Box sx={{ ml: 2 }}>
         <p>{postedAt(createdAt)}</p>
-        <Typography variant="h5">{title}</Typography>
-        <Typography variant="h6">{`#${category}`}</Typography>
+        <Typography variant='h5'>{title}</Typography>
+        <Typography variant='h6'>{`#${category}`}</Typography>
       </Box>
     </Box>
   );

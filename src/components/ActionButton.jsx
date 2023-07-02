@@ -1,20 +1,10 @@
 import { ThumbDown, ThumbUp } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 
 function ActionButton({ type, count, onButtonClicked }) {
-  const [isClicked, setIsClicked] = useState(false);
-
-  const handleClick = () => {
-    setIsClicked(!isClicked);
-    onButtonClicked();
-  };
-
-  const buttonColor = isClicked ? 'secondary' : 'primary';
-
   return (
-    <Button type='button' onClick={handleClick} color={buttonColor}>
+    <Button type='button' onClick={onButtonClicked}>
       {type === 'up' ? <ThumbUp /> : <ThumbDown />} {count}
     </Button>
   );

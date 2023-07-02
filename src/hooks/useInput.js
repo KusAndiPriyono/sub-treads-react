@@ -4,7 +4,11 @@ function useInput(defaultValue = '') {
   const [value, setValue] = useState(defaultValue);
 
   function handleValueChange({ target }) {
-    setValue(target.value);
+    try {
+      setValue(target.value);
+    } catch (error) {
+      setValue('');
+    }
   }
 
   return [value, handleValueChange, setValue];

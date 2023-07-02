@@ -1,16 +1,15 @@
-import { useDispatch } from "react-redux";
-import { asyncAddComment } from "../../states/threadDetail/action";
-import { Button, TextField } from "@mui/material";
-import PropTypes from "prop-types";
-import { useState } from "react";
+import { useDispatch } from 'react-redux';
+import { asyncAddComment } from '../../states/threadDetail/action';
+import { Button, TextField } from '@mui/material';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 function InputComment({ threadId }) {
-  const [content, setValue] = useState("");
+  const [content, setValue] = useState('');
   const dispatch = useDispatch();
 
   const onChange = (e) => {
-    const html = e.target.value;
-    setValue(html);
+    setValue(e.target.value);
   };
 
   const onAddComment = () => {
@@ -20,12 +19,13 @@ function InputComment({ threadId }) {
   return (
     <form>
       <TextField
-        onChange={onChange}
+        onInput={onChange}
         multiline
         rows={4}
-        sx={{ width: "100%" }}
+        value={content}
+        sx={{ width: '100%' }}
       />
-      <Button sx={{ m: 2 }} variant="contained" onClick={() => onAddComment()}>
+      <Button sx={{ m: 2 }} variant='contained' onClick={() => onAddComment()}>
         Send
       </Button>
     </form>

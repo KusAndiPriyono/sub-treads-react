@@ -4,6 +4,7 @@ import isPreloadReducer from './isPreload/reducer';
 import usersReducer from './users/reducer';
 import threadReducer from './thread/reducer';
 import threadDetailReducer from './threadDetail/reducer';
+import leaderboardsReducer from './leaderboard/reducer';
 
 const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ const store = configureStore({
     users: usersReducer,
     threads: threadReducer,
     threadDetail: threadDetailReducer,
+    leaderboards: leaderboardsReducer,
   },
 });
 

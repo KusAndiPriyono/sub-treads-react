@@ -10,6 +10,7 @@ import Navigation from './components/Navigation';
 import HomePage from './pages/HomePage';
 import DetailPage from './pages/DetailPage';
 import CreateThreadPage from './pages/CreateThreadPage';
+import LeaderboardPage from './pages/LeaderboardPage';
 
 function App() {
   const { authUser = null, isPreload = false } = useSelector(
@@ -53,6 +54,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/create' element={<CreateThreadPage />} />
           <Route path='/thread/:id' element={<DetailPage />} />
+          <Route path='/leaderboards' element={<LeaderboardPage />} />
         </Routes>
       </main>
     </>

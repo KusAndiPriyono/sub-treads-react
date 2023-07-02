@@ -340,7 +340,7 @@ const api = (() => {
 
   // Leaderboard
   async function getLeaderboard() {
-    const response = await fetch(`${BASE_URL}/leaderboard`);
+    const response = await fetch(`${BASE_URL}/leaderboards`);
     const responseJson = await response.json();
 
     const { status, message } = responseJson;

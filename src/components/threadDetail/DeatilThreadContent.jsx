@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { Box } from '@mui/material';
 import parse from 'html-react-parser';
 import PropTypes from 'prop-types';

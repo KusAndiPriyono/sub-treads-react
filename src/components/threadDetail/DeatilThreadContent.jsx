@@ -1,7 +1,7 @@
-import { Box, CardContent } from "@mui/material";
-import parse from "html-react-parser";
-import PropTypes from "prop-types";
-import { detailProp } from "../../utils/propHelper";
+import { Box } from '@mui/material';
+import parse from 'html-react-parser';
+import PropTypes from 'prop-types';
+import { detailProp } from '../../utils/propHelper';
 
 function DetailThreadContent({ detail }) {
   const { body } = detail;

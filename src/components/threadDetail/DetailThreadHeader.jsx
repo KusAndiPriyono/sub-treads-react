@@ -1,4 +1,4 @@
-import { Box, CardContent, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { detailProp } from '../../utils/propHelper';
 import { postedAt } from '../../utils/postedAt';
 import PropTypes from 'prop-types';

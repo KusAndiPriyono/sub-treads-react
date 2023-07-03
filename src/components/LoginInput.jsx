@@ -11,6 +11,8 @@ import useInput from '../hooks/useInput';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import CircularLoading from './Loading';
+import { useState } from 'react';
 
 function Copyright(props) {
   return (
@@ -33,6 +35,16 @@ function Copyright(props) {
 function LoginInput({ login }) {
   const [email, onEmailChange] = useInput('');
   const [password, onPasswordChange] = useInput('');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleClick = () => {
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
+      login({ email, password });
+    }, 2000);
+  };
 
   return (
     <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
@@ -74,15 +86,17 @@ function LoginInput({ login }) {
             value={password}
             onChange={onPasswordChange}
           />
-          <Button
-            type='button'
-            fullWidth
-            variant='contained'
-            sx={{ mt: 3, mb: 2 }}
-            onClick={() => login({ email, password })}
-          >
-            Login
-          </Button>
+          <CircularLoading isLoading={isLoading}>
+            <Button
+              type='button'
+              fullWidth
+              variant='contained'
+              sx={{ mt: 3, mb: 2 }}
+              onClick={handleClick}
+            >
+              Login
+            </Button>
+          </CircularLoading>
           <Grid container>
             <Grid item>
               <Link to='/register' variant='body2'>

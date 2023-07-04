@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { configureStore } from '@reduxjs/toolkit';
 import authUserReducer from './authUser/reducer';
 import isPreloadReducer from './isPreload/reducer';

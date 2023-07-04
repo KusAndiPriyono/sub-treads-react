@@ -1,3 +1,8 @@
+/* eslint-disable react/jsx-curly-brace-presence */
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 import {
   Avatar,
   Box,

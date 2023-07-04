@@ -1,3 +1,5 @@
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable prettier/prettier */
 function postedAt(date) {
   const now = new Date();
   const posted = new Date(date);

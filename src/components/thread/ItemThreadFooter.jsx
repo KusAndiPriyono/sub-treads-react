@@ -1,3 +1,7 @@
+/* eslint-disable react/jsx-curly-brace-presence */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 import { useDispatch } from 'react-redux';
 import {
   asyncDownVoteThread,

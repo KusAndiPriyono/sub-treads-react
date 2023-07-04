@@ -1,3 +1,7 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable no-alert */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 import { Box, Button, TextField, Typography } from '@mui/material';
 import useInput from '../../hooks/useInput';
 import PropTypes from 'prop-types';

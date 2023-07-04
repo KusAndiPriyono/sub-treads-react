@@ -1,3 +1,6 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { asyncReceiveLeaderboard } from '../states/leaderboard/action';

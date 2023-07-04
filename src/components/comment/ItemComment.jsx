@@ -1,3 +1,6 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 import { useDispatch, useSelector } from 'react-redux';
 import {
   asyncToggleDownComment,

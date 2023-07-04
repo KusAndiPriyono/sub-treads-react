@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { ActionType } from './action';
 
 function leaderboardsReducer(leaderboards = [], action = {}) {

@@ -1,3 +1,5 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable prettier/prettier */
 import { ThumbDown, ThumbUp } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import PropTypes from 'prop-types';

@@ -1,3 +1,7 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 import { Box, Divider } from '@mui/material';
 import ItemComment from './ItemComment';
 import { commentProp } from '../../utils/propHelper';

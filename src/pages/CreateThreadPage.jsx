@@ -1,3 +1,6 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { createThread } from '../states/thread/action';

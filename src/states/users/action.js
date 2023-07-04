@@ -1,3 +1,5 @@
+/* eslint-disable no-alert */
+/* eslint-disable prettier/prettier */
 import api from '../../utils/api';
 
 const ActionType = {

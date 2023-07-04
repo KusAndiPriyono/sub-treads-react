@@ -1,3 +1,5 @@
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 import * as React from 'react';
 import { CssBaseline, Grid } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';

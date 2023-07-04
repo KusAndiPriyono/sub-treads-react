@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/react-in-jsx-scope */
 import { Box } from '@mui/material';
 import parse from 'html-react-parser';

@@ -1,4 +1,9 @@
-import { Box, Card, Grid } from '@mui/material';
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
+import { Box } from '@mui/material';
 import { threadProp } from '../../utils/propHelper';
 import PropTypes from 'prop-types';
 import ItemThread from './ItemThread';

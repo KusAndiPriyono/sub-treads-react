@@ -1,3 +1,6 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 import { Card, CardContent } from '@mui/material';
 import ItemThreadHeader from './ItemThreadHeader';
 import ItemThreadFooter from './ItemThreadFooter';

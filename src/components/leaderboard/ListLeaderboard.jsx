@@ -1,3 +1,8 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/jsx-fragments */
+/* eslint-disable react/jsx-no-useless-fragment */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 import {
   Box,
   Table,

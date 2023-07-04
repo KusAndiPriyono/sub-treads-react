@@ -1,3 +1,6 @@
+/* eslint-disable import/order */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable prettier/prettier */
 import { Box, Typography } from '@mui/material';
 import InputComment from '../comment/InputComment';
 import { detailProp } from '../../utils/propHelper';

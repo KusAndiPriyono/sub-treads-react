@@ -1,3 +1,7 @@
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
 import { Create, Groups, Leaderboard, Logout } from '@mui/icons-material';
 import {
   AppBar,

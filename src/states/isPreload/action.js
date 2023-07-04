@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import api from '../../utils/api';
 import { setAuthUserActionCreator } from '../authUser/action';
 

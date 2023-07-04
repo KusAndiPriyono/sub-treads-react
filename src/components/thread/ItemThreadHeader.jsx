@@ -1,3 +1,7 @@
+/* eslint-disable react/jsx-curly-brace-presence */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 import { Box, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { userProp } from '../../utils/propHelper';

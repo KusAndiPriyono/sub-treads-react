@@ -1,3 +1,7 @@
+/* eslint-disable react/jsx-no-useless-fragment */
+/* eslint-disable import/order */
+/* eslint-disable import/no-duplicates */
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';

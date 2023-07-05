@@ -1,5 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable prettier/prettier */
 import { configureStore } from '@reduxjs/toolkit';
+import { loadingBarReducer } from 'react-redux-loading-bar';
 import authUserReducer from './authUser/reducer';
 import isPreloadReducer from './isPreload/reducer';
 import usersReducer from './users/reducer';
@@ -15,6 +17,7 @@ const store = configureStore({
     threads: threadReducer,
     threadDetail: threadDetailReducer,
     leaderboards: leaderboardsReducer,
+    loadingBar: loadingBarReducer,
   },
 });
 

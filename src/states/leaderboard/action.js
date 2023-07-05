@@ -1,5 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-alert */
 /* eslint-disable prettier/prettier */
+import { hideLoading, showLoading } from 'react-redux-loading-bar';
 import api from '../../utils/api';
 
 const ActionType = {
@@ -17,12 +19,14 @@ function receiveLeaderboardActionCreator(leaderboards) {
 
 function asyncReceiveLeaderboard() {
   return async (dispatch) => {
+    dispatch(showLoading());
     try {
       const leaderboards = await api.getLeaderboard();
       dispatch(receiveLeaderboardActionCreator(leaderboards));
     } catch (error) {
       alert(error.message);
     }
+    dispatch(hideLoading());
   };
 }
 

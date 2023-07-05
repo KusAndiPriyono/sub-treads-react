@@ -1,5 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-alert */
 /* eslint-disable prettier/prettier */
+import { hideLoading, showLoading } from 'react-redux-loading-bar';
 import api from '../../utils/api';
 
 const ActionType = {
@@ -95,6 +97,7 @@ function toggleClearVoteCommentActionCreator(userId, commentId) {
 
 function asyncReceiveThreadDetail(threadId) {
   return async (dispatch) => {
+    dispatch(showLoading());
     dispatch(clearThreadDetailActionCreator());
     try {
       const threadDetail = await api.getDetailThread(threadId);
@@ -102,22 +105,26 @@ function asyncReceiveThreadDetail(threadId) {
     } catch (error) {
       alert(error.message);
     }
+    dispatch(hideLoading());
   };
 }
 
 function asyncAddComment(id, content) {
   return async (dispatch) => {
+    dispatch(showLoading());
     try {
       const comment = await api.createComment(id, content);
       dispatch(addCommentActionCreator(comment));
     } catch (error) {
       alert(error.message);
     }
+    dispatch(hideLoading());
   };
 }
 
 function asyncToggleUpThreadDetail() {
   return async (dispatch, getState) => {
+    dispatch(showLoading());
     const { authUser, threadDetail } = getState();
     dispatch(toggleUpThreadDetailActionCreator(authUser.id));
 
@@ -126,11 +133,13 @@ function asyncToggleUpThreadDetail() {
     } catch (error) {
       alert(error.message);
     }
+    dispatch(hideLoading());
   };
 }
 
 function asyncToggleDownThreadDetail() {
   return async (dispatch, getState) => {
+    dispatch(showLoading());
     const { authUser, threadDetail } = getState();
     dispatch(toggleDownThreadDetailActionCreator(authUser.id));
 
@@ -139,11 +148,13 @@ function asyncToggleDownThreadDetail() {
     } catch (error) {
       alert(error.message);
     }
+    dispatch(hideLoading());
   };
 }
 
 function asyncClearVoteThreadDetail() {
   return async (dispatch, getState) => {
+    dispatch(showLoading());
     const { authUser, threadDetail } = getState();
     dispatch(clearVoteThreadDetailActionCreator(authUser.id));
 
@@ -152,11 +163,13 @@ function asyncClearVoteThreadDetail() {
     } catch (error) {
       alert(error.message);
     }
+    dispatch(hideLoading());
   };
 }
 
 function asyncToggleUpComment(commentId) {
   return async (dispatch, getState) => {
+    dispatch(showLoading());
     const { authUser, threadDetail } = getState();
     dispatch(toggleUpVoteCommentActionCreator(authUser.id, commentId));
     try {
@@ -164,11 +177,13 @@ function asyncToggleUpComment(commentId) {
     } catch (error) {
       alert(error.message);
     }
+    dispatch(hideLoading());
   };
 }
 
 function asyncToggleDownComment(commentId) {
   return async (dispatch, getState) => {
+    dispatch(showLoading());
     const { authUser, threadDetail } = getState();
     dispatch(toggleDownVoteCommentActionCreator(authUser.id, commentId));
     try {
@@ -176,11 +191,13 @@ function asyncToggleDownComment(commentId) {
     } catch (error) {
       alert(error.message);
     }
+    dispatch(hideLoading());
   };
 }
 
 function asyncClearVoteComment(commentId) {
   return async (dispatch, getState) => {
+    dispatch(showLoading());
     const { authUser, threadDetail } = getState();
     dispatch(toggleClearVoteCommentActionCreator(authUser, commentId));
     try {
@@ -188,6 +205,7 @@ function asyncClearVoteComment(commentId) {
     } catch (error) {
       alert(error.message);
     }
+    dispatch(hideLoading());
   };
 }
 

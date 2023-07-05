@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-boolean-value */
 /* eslint-disable react/jsx-no-useless-fragment */
 /* eslint-disable import/order */
 /* eslint-disable import/no-duplicates */
@@ -15,6 +16,7 @@ import HomePage from './pages/HomePage';
 import DetailPage from './pages/DetailPage';
 import CreateThreadPage from './pages/CreateThreadPage';
 import LeaderboardPage from './pages/LeaderboardPage';
+import Loading from './components/Loading';
 
 function App() {
   const { authUser = null, isPreload = false } = useSelector(
@@ -38,6 +40,7 @@ function App() {
   if (authUser === null) {
     return (
       <>
+        <Loading />
         <main>
           <Routes>
             <Route path='/*' element={<LoginPage />} />
@@ -50,6 +53,7 @@ function App() {
 
   return (
     <>
+      <Loading />
       <header>
         <Navigation authUser={authUser} signOut={onSignOut} />
       </header>

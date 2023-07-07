@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/require-default-props */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable prettier/prettier */

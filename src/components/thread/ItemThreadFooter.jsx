@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/jsx-curly-brace-presence */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable import/order */

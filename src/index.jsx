@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable import/order */
 /* eslint-disable prettier/prettier */
 import React, { StrictMode } from 'react';

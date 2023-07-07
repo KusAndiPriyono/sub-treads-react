@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable prettier/prettier */
 import { showLoading, hideLoading } from 'react-redux-loading-bar';

@@ -40,7 +40,7 @@ function LoginInput({ login }) {
   const [email, onEmailChange] = useInput('');
   const [password, onPasswordChange] = useInput('');
 
-  const handleClick = () => {
+  const handleLogin = () => {
     login({ email, password });
   };
 
@@ -70,6 +70,7 @@ function LoginInput({ login }) {
             name='email'
             autoComplete='email'
             autoFocus
+            type='email'
             value={email}
             onChange={onEmailChange}
           />
@@ -90,7 +91,7 @@ function LoginInput({ login }) {
             fullWidth
             variant='contained'
             sx={{ mt: 3, mb: 2 }}
-            onClick={handleClick}
+            onClick={handleLogin}
           >
             Login
           </Button>

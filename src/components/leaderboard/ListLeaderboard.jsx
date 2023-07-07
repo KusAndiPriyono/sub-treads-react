@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react/jsx-fragments */
 /* eslint-disable react/jsx-no-useless-fragment */

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-console */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable import/order */

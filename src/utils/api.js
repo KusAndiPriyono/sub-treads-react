@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable prettier/prettier */
 const api = (() => {

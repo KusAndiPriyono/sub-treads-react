@@ -23,7 +23,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+<<<<<<< Updated upstream
     "eject": "react-scripts eject"
+=======
+    "eject": "react-scripts eject",
+    "e2e": "cypress run",
+    "lint": "eslint ./src --ext .jsx --ext .js"
+>>>>>>> Stashed changes
   },
   "eslintConfig": {
     "extends": [

@@ -1,3 +1,13 @@
+<<<<<<< Updated upstream
+=======
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/jsx-curly-brace-presence */
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
+>>>>>>> Stashed changes
 import {
   Avatar,
   Box,

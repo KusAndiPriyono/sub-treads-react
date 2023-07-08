@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "cypress/globals": true
+  },
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier", "cypress"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

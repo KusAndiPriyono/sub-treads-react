@@ -110,7 +110,7 @@ function Navigation({ signOut, window, authUser }) {
             {/* <MenuIcon /> */}
           </IconButton>
           <Typography variant='h6' noWrap component='div'>
-            Forum Diskusi
+            Aplikasi Forum Diskusi
           </Typography>
         </Toolbar>
       </AppBar>
